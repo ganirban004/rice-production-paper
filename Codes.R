@@ -59,7 +59,7 @@ line_minT <- ggplot(trend_df, aes(x = Year)) +
   geom_point(aes(y = min_T.Boro, color = "min_T.Boro")) +
   scale_color_manual(name = "Category", 
                      values = c("min_T.Aus" = "red", "min_T.Aman" = "blue", "min_T.Boro" = "green4")) + 
-  labs(title = "Minimum Temperature", x = NULL, y = "Avearge Minimum Temperature (°C)") + 
+  labs(title = "Minimum Temperature", x = NULL, y = "Average Minimum Temperature (°C)") + 
   theme_minimal() + theme(panel.border = element_rect(color = "black", fill = NA, size = 1), 
                           legend.position = "none", axis.text.x = element_blank())
 # Maximum Temperature #
@@ -72,7 +72,7 @@ line_maxT <- ggplot(trend_df, aes(x = Year)) +
   geom_point(aes(y = max_T.Boro, color = "max_T.Boro")) +
   scale_color_manual(name = "Category", 
                      values = c("max_T.Aus" = "red", "max_T.Aman" = "blue", "max_T.Boro" = "green4")) + 
-  labs(title = "Maximum Temperature", x = NULL, y = "Avearge Maximum Temperature (°C)") + 
+  labs(title = "Maximum Temperature", x = NULL, y = "Average Maximum Temperature (°C)") + 
   theme_minimal() + theme(panel.border = element_rect(color = "black", fill = NA, size = 1), 
                           legend.position = "none", axis.text.x = element_blank())
 # Rainfall #
@@ -85,7 +85,7 @@ line_rainfall <- ggplot(trend_df, aes(x = Year)) +
   geom_point(aes(y = rainfall.Boro, color = "Boro")) +
   scale_color_manual(name = "Category", 
                      values = c("Aus" = "red", "Aman" = "blue", "Boro" = "green4")) + 
-  labs(title = "Rainfall", x = "Year", y = "Avearge Rainfall (mm)") + 
+  labs(title = "Rainfall", x = "Year", y = "Average Rainfall (mm)") + 
   theme_minimal() + 
   theme(panel.border = element_rect(color = "black", fill = NA, size = 1), 
         legend.position = "bottom", legend.direction = "horizontal")
